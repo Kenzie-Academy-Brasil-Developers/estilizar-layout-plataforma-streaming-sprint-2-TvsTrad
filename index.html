@@ -9,6 +9,7 @@
 	<title>Kenzieflix</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!-- FAVICON -->
@@ -27,19 +28,19 @@
 	<!-- PÁGINA INICIAL -->
 	<div class="pg-home">
 		
-		<section>
+		<section class="section">
 
-			<header>
+			<header class="pg-title">
 				<h2>Quem está assistindo?</h2>
 			</header>
 
 			<!-- LISTA DE USUÁRIOS -->
-			<ul>
+			<ul class="users">
 				
 				<!-- USUÁRIO 1 -->
-				<li>
+				<li class="users__listitem">
 					<figure>
-						<img src="img/avatar.png" alt="Gabriel">
+						<img class="userImg" src="img/avatar.png" alt="Gabriel">
 						<figcaption>Gabriel</figcaption>
 					</figure>
 
@@ -47,9 +48,9 @@
 				</li>
 				
 				<!-- USUÁRIO 2 -->
-				<li>
+				<li class="users__listitem">
 					<figure>
-						<img src="img/avatar1.png" alt="Maria">
+						<img class="userImg" src="img/avatar1.png" alt="Maria">
 						<figcaption>Maria</figcaption>
 					</figure>
 
@@ -57,9 +58,9 @@
 				</li>
 				
 				<!-- USUÁRIO 3 -->
-				<li>
+				<li class="users__listitem">
 					<figure>
-						<img src="img/avatar2.png" alt="Renato">
+						<img class="userImg" src="img/avatar2.png" alt="Renato">
 						<figcaption>Renato</figcaption>
 					</figure>
 
@@ -69,7 +70,7 @@
 				<!-- ADICIONAR PERFIL-->
 				<li class="addPerfil">
 					<figure>
-						<img src="img/plus-sign.png" alt="Adicionar perfil">
+						<img  class="addUserImg" src="img/plus-sign.png" alt="Adicionar perfil">
 						<figcaption>Adicionar perfil</figcaption>
 					</figure>
 
@@ -79,7 +80,7 @@
 			</ul>
 
 			<footer>
-				<button>Gerenciar Perfis</button>
+				<button class= "manage">Gerenciar Perfis</button>
 			</footer>
 
 		</section>

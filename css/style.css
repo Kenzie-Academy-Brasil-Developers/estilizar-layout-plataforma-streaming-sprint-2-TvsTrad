@@ -16,23 +16,113 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	--fonte: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	--backgroundColor: #00002E;
+	--textColor: #a4a4a4;
+	--titleColor: #fff;
+	--highlightText: #fff;
+
 }
 
 /*BODY*/
 	body{
-
+		background-color: var(--backgroundColor);
+		color: var(--textColor);
+		font-family: var(--fonte);
 	}
 
 /*TOPO*/
 	header.topo{
-		
+		display: flex;
+		justify-content: flex-start;
 	}
-
 /*RODAPÉ*/
-	
+	footer{
+		display: flex;
+		justify-content: center;
+		margin: 40px auto;
+	}
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
+	figcaption{
+		display: none;
+	}
+	.section{
+		margin: calc(30vh - 80px) auto;
+	}
+	section{
+		margin: 0 auto;
+	}
+	.pg-title{
+		display:flex;
+		font-size: 40px;
+		justify-content: center;
+		margin-bottom: 20px;
+		color: var(--titleColor);
+		font-weight: bolder;
+	}
+	.users{
+		max-width: 858px;
+		display: flex;
+		flex-flow: row nowrap;
+		margin: 10px auto;
+		flex-basis: 50%;
+		justify-content: space-around;
+		align-items: center;
 		
 	}
+	.users h3{
+		text-align: center;
+		margin-top: 40px;
+	}
+	.users__listitem{
+		display: flex;
+		flex-flow: column nowrap;
+		width: 186px;
+		justify-content: center;
+		padding: 10px ;
+	}
+
+	.users__listitem:hover{
+		color: var(--titleColor);
+	}
+
+	.addPerfil:hover{
+		color: var(--titleColor);
+	}
+
+	.userImg{
+		width: 186px;
+	}
+	.userImg:hover{
+		border: 2px solid var(--titleColor);
+	}
+	.addUserImg{
+		width: 186px;
+		border-radius: 50%;
+	}
+	.addUserImg:hover{
+		border: 2px solid var(--titleColor);
+	}
+	.manage {
+		border: 2px solid var(--titleColor);
+		color: var(--titleColor);
+		background-color: var(--backgroundColor);
+		padding: 20px 40px;
+		font-weight: bold;
+	}
+	.manage:hover {
+		border-color: var(--backgroundColor);
+		background-color: var(--titleColor);
+		color: var(--backgroundColor);
+	}
+
+
+@media only screen and (max-width: 720px){
+	.users{
+		display: flex;
+		flex-flow: row wrap;
+		flex-basis:100%;
+		
+	}
+}
